@@ -14,7 +14,6 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.io.FileOutputStream;
-import java.lang.annotation.ElementType;
 import java.util.ArrayList;
 
 
@@ -101,11 +100,6 @@ public class Reportes {
             documento.add(tabla);
             documento.add(Chunk.NEWLINE);
             documento.add(new Paragraph("Fecha "+this.fecha));
-            
-          
-            
-            
-                    
             
             documento.close();
             
