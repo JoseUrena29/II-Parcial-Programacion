@@ -7,6 +7,7 @@ public class Datos {
     private String nombre;
     private String apellido;
     private String contraseña;
+    private String nombre_reporte;
 
     public String getUsuario() {
         return usuario;
@@ -38,6 +39,14 @@ public class Datos {
 
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
+    }
+
+    public String getNombre_reporte() {
+        return nombre_reporte;
+    }
+
+    public void setNombre_reporte(String nombre_reporte) {
+        this.nombre_reporte = nombre_reporte;
     }
     
 }

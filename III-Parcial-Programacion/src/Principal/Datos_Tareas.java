@@ -6,6 +6,7 @@ public class Datos_Tareas {
     private String fecha_tarea;
     private String nombre_tarea;
     private String encargado_tarea;
+    private String nombre_reporte;
 
     public String getFecha_tarea() {
         return fecha_tarea;
@@ -29,6 +30,14 @@ public class Datos_Tareas {
 
     public void setEncargado_tarea(String encargado_tarea) {
         this.encargado_tarea = encargado_tarea;
+    }
+
+    public String getNombre_reporte() {
+        return nombre_reporte;
+    }
+
+    public void setNombre_reporte(String nombre_reporte) {
+        this.nombre_reporte = nombre_reporte;
     }
     
     
