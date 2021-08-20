@@ -236,7 +236,7 @@ public class Principal_Tareas extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonabrirreporteActionPerformed
 
     private void ButtonReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonReporteActionPerformed
-        Reportes reporte = new Reportes(Txtnombrereporte.getText(),new Date().toString(),Reportes.lista_tareas,"src\\Imagenes\\LogoReporte.JPG");
+        Reportes reporte = new Reportes(Txtnombrereporte.getText(),new Date().toString(),Reportes.lista_tareas,"src\\Imagenes\\LogoReporte.png");
         
         reporte.CrearReporte();
         
