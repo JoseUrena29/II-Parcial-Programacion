@@ -2,6 +2,10 @@
 
 package Graficos;
 
+import Principal.Componentes;
+import Principal.Datos;
+import javax.swing.JOptionPane;
+
 public class Login extends javax.swing.JFrame {
 
     public Login() {
@@ -134,7 +138,25 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_TxtusuarioActionPerformed
 
     private void ButtoningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtoningresarActionPerformed
-
+        String usuario = Txtusuario.getText();
+        String contraseña = Txtcontraseña.getText();
+        
+        boolean encontrar = true;
+        
+        for (Datos i:Componentes.usuarios) {
+            if (i.getUsuario().equals(usuario) && i.getContraseña().equals(contraseña)){
+                encontrar = true;
+                JOptionPane.showMessageDialog(rootPane, "USUARIO Y CONTRASEÑA CORRECTOS", "Bienvenido al Sistema", JOptionPane.INFORMATION_MESSAGE);
+                Principal_Tareas P = new Principal_Tareas();
+                P.setVisible(true);
+                this.dispose();
+                
+            }else{
+                encontrar = false;
+                JOptionPane.showMessageDialog(rootPane, "USUARIO O CONTRASEÑA INCORRECTOS", "Mensaje de Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
+        }
     }//GEN-LAST:event_ButtoningresarActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
